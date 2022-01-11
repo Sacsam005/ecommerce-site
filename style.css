@@ -763,6 +763,7 @@ footer strong {
   #feature .feature-box {
     margin: 0.5rem 0.25rem;
     outline: 1px solid #004e4e;
+    border-radius: 5px;
   }
   #product1 .pro-container {
     -webkit-box-pack: center;
