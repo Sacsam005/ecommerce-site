@@ -11,6 +11,20 @@
   scroll-behavior: smooth
   font-weight: 600
 
+html
+  width: 100%
+  height: 100vh
+  overflow-x: hidden
+
+body
+  width: 100%
+  color: #016565
+  font-style: italic
+  font-weight: 600
+  width: 100%
+  height: 100vh
+  overflow-x: hidden
+
 h1
   font-size: $fontExtraLarge
   line-height: 2rem
@@ -58,11 +72,6 @@ p
   background: transparent
   border: 1px solid $primaryDark
 
-body
-  width: 100%
-  color: #016565
-  font-style: italic
-  font-weight: 600
 // End of GLobal styling
 
 // Header styling 
@@ -461,19 +470,19 @@ footer
 
     li
       margin-top: 0
-      position: absolute
-      bottom: 300px
-      margin: 1rem 0
       a
         font-size: $fontMed
   #mobile
     display: flex
     justify-content: space-between
     align-items: center
+
     .fa-outdent,
     .fa-shopify,
       padding-left: 1.3rem
       font-size: $fontExtraLarge / 2
+      margin: 0 1rem
+
   #close
     display: block
     fa-times
@@ -536,25 +545,102 @@ footer
   footer.section-p1
     padding: 0 0.5rem
 
-// // Small devices
-// @media (max-width: 500px)
-//   #header
-//     padding: 0 2rem
-//     #navbar
-//       width: 100%
-//       justify-content: center
+// Small devices
+@media (max-width: 500px)
+  .logo
+    width: 75%
 
-//     #mobile
-//       display: flex
-//       justify-content: space-between
-//       margin: 0 1rem
-//     .fa-outdent,
-//     .fa-shopify,
-//       font-size: $fontExtraLarge / 2
-//       position: absolute
-//       top: 10%
-//       right: 5%
-//       margin-right: 2rem
+  #header
+    width: 100%
+    padding: 0 2rem
+    #navbar
+      width: 100%
+      justify-content: center
+      li
+        margin: 1rem
 
-//   #hero
-//     width: 100%
+    #mobile
+      display: flex
+      justify-content: center
+    .fa-outdent,
+    .fa-shopify,
+      font-size: $fontExtraLarge / 2
+
+  #hero
+    width: 100%
+    background-position: left 10px
+    padding: 0 1rem
+
+    h2
+      font-size: $fontMed
+      width: 200px
+      line-height: 1
+      font-weight: bold
+
+  #banner h2, h2 span
+    font-size: $fontMed
+    color: red
+
+  #product1
+    h1
+      line-height: 1
+    h4
+      font-size: $fontLarge/2
+      line-height: 1.5
+
+  #sm-banner
+    h2
+      font-size: $fontMed
+
+  #small-banner-box
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+  #newsletter.section-m1
+    text-align: center
+    justify-content: center
+
+  footer
+    width: 100%
+    height: 100%
+    padding: 0 0.5rem
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr 1fr 1fr
+
+  .copyright
+    padding-top: 10rem
+
+// Tablets and Larger mobile devices
+
+@media ( max-width: 1024px )
+  .logo
+    width: 75%
+  #hero
+    background-size: cover
+    background-position: center
+
+  #sm-banner
+    width: 100%
+    .banner-box
+      width: 100%
+
+  #small-banner-box
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: auto
+    .sm-banner1
+      grid-column: 1/2
+      grid-row: 1/2
+      background-size: contain
+      background-repeat: no-repeat
+    .sm-banner2
+      grid-column: 2/3
+      grid-row: 1/2
+    .sm-banner3
+      grid-column: 1/3
+      grid-row: 2/3
+      background-size: contain
+      background-repeat: no-repeat
