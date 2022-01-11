@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Srisakdi&family=Yuji+Boku&display=swap')
+@import './variables'
+
+// GLobal Styling
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: 'Italiana', serif
+  color: $primaryColor
+  scroll-behavior: smooth
+  font-weight: 600
+
+h1
+  font-size: $fontExtraLarge
+  line-height: 2rem
+  color: #222
+
+h2
+  font-size: $fontLarge
+  line-height: 1.5rem
+  color: #222
+
+h4
+  font-size: $fontMed
+  color: #222
+
+h6
+  font-weight: 700
+  color: #222
+  font-size: 1rem
+
+p
+  font-size: 1rem
+  color: #333
+  margin: 1rem 0 1.2rem 0
+
+.section-p1
+  padding: 2.5rem 5rem
+
+.section-m1
+  margin: 2.5rem 0
+
+.normal
+  font-size: $fontSmall
+  font-style: italic
+  font-weight: 600
+  padding: 1rem 1.8rem
+  color: #000
+  background-color: $primaryLight
+  border-radius: 5px
+  cursor: pointer
+  border: none
+  outline: none
+  transition: 0.2s
+.btn-awesome
+  @extend .normal
+  background: transparent
+  border: 1px solid $primaryDark
+
+body
+  width: 100%
+  color: #016565
+  font-style: italic
+  font-weight: 600
+// End of GLobal styling
+
+// Header styling 
+.logo
+  @include textHover
+  &:hover
+    background-size: $hover
+#header
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 1rem 5rem
+  background: #fff
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1)
+  z-index: 999
+  position: sticky
+  top: 0
+  left: 0
+
+  #navbar
+    display: flex
+    align-items: center
+    justify-content: center
+
+    li
+      list-style: none
+      padding: 0 1rem
+      position: relative
+
+      a
+        text-decoration: none
+        font-size: 1.3rem
+        font-weight: 600
+        color: $primaryColor
+        @include textHover
+        &:hover
+          background-size: $hover
+    .active
+      &::after
+        content: ''
+        width: 30%
+        height: 2px
+        background: $primaryDark
+        position: absolute
+        bottom: -2px
+        left: 2.5rem
+
+.fa-shopify
+  font-weight: bold
+  &:hover
+    color: $primaryLight
+
+// End of Header Styling 
+
+// Hero Section styling
+#hero
+  background-image: url('./img/hero4.jpg')
+  height: 90vh
+  width: 100%
+  background-position: top 25% right 0
+  background-size: cover
+  padding: 0 5rem
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: center
+
+  button
+    background-image: url('./img/button.png')
+    background-color: transparent
+    color: $primaryColor
+    font-weight: bold
+    font-style: italic
+    border: 0
+    padding: 1rem 6rem 1rem 4rem
+    background-repeat: no-repeat
+    cursor: pointer
+
+  h4
+    font-weight: 500
+    padding-bottom: 1rem
+    color: $primaryDark
+
+  h2
+    font-weight: 550
+    width: 450px
+    line-height: 1
+
+  p
+    width: 150px
+    font-weight: 600
+    font-weight: 600
+// End of Hero Section
+
+// Feature Section
+#feature
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+
+#feature .feature-box
+  width: 180px
+  text-align: center
+  padding: 1.5rem 1rem
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.03)
+  border: 0.2px solid $primaryDark
+  border-radius: 5px
+  margin: 1rem 0
+  &:hover
+    box-shadow: 0.25rem 0.25rem 5rem rgba(0, 78, 78, 0.03)
+    cursor: pointer
+  // &:nth-child(odd)
+  //   background-color: $primaryLight
+
+  h6
+    display: inline-block
+    padding: 0.5rem 0.5rem 0.3rem 0.5rem
+    line-height: 1
+    border-radius: 5px
+    color: $primaryDark
+    font-weight: bold
+    @include textHover
+    &:hover
+      background-size: $hover
+
+  img
+    width: 100%
+    height: 100px
+    margin-bottom: 0.7rem
+h1
+  border: none
+  outline: none
+  width: auto
+  margin: 0 auto
+  padding: 0
+  font-size: $fontMed
+  color: black
+// End of Feature Section
+
+// Product Section styling 
+#product1
+  text-align: center
+  h1
+    font-size: $fontExtraLarge
+    line-height: 2
+    color: $primaryDark
+
+  h6
+    line-height: 2
+
+  .pro-container
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    padding-top: 1.3rem
+
+  .product
+    width: 23%
+    min-width: 250px
+    padding: 0.7rem 0.9rem
+    border: 1px solid $primaryLight
+    border-radius: 1.5rem
+    cursor: pointer
+    box-shadow: 1.2rem 1.2rem 2rem rgba(0,0,0,0.02)
+    margin: 1rem 0
+    transition: 0.2s ease-in
+    position: relative
+    &:hover
+      box-shadow: 1rem 1rem 2rem rgba(0,0,0,0.1)
+
+    .cart
+      height: 2.5rem
+      width: 2.5rem
+      background-color: transparent
+      line-height: 2.5rem
+      border-radius: 50%
+      border: 1px solid $primaryLight
+      color: $primaryDark
+      position: absolute
+      bottom: 25px
+      right: 10px
+    .description
+      text-align: start
+      padding: 0.8rem 0
+
+      span
+        color: $primaryDark
+        font-size: $fontSmall
+      h5
+        padding-top: 7px
+        color: $primaryDark
+        font-size: $fontMed
+
+      h4
+
+        padding-top: 7px
+        font-size: $fontMed
+        font-weight: 700
+        color: $primaryDark
+
+      i
+        color: #c9d681
+        font-size: $fontSmall
+
+    img
+      width: 100%
+      border-radius: $border
+
+// End of Product styling 
+
+// Banner Section
+
+#banner
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  text-align: center
+  background-image: url('./img/banner/b2.jpg')
+  width: 100%
+  height: 40vh
+  background-size: contain
+  background-position: right
+  background-repeat: no-repeat
+
+  h4
+    color: #000
+    font-size: $fontMed
+
+  h2
+    color: #000
+    font-size: $fontExtraLarge
+    padding: 1rem 0
+    span
+      text-shadow: 1px 2px 2px white
+  button
+    &:hover
+      @include btnHover
+
+// Promo Section
+#sm-banner
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+.banner-box
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: flex-start
+  background-image: url('./img/banner/img1.jpg')
+  min-width: 500px
+  height: 50vh
+  @include background
+  padding: 1.5rem
+
+.banner-box2
+  background-image: url('./img/banner/img2.jpg')
+
+h4, h2, span, button
+  font-weight: bold
+  font-style: italic
+  margin-top: 0.5rem
+h2 span
+  color: $primaryDark
+  font-size: $fontLarge
+  font-weight: bold
+  @include textHover
+  background-size: $hover
+
+  h4
+    color: $primaryColor
+button,
+  color: $primaryColor
+  &:hover
+    @include btnHover
+
+#small-banner-box
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  padding: 0 5rem
+  .banner-box
+    min-width: 30%
+    justify-content: center
+    height: 30vh
+    @include background
+    padding: 1.5rem
+  .sm-banner1
+    background-image: url(./img/banner/b23.jpg)
+  .sm-banner2
+    background-image: url('./img/banner/b17.jpg')
+  .sm-banner3
+    background-image: url('./img/banner/b22.jpg')
+
+  h3
+    margin-top: 0.5rem
+    font-weight: bold
+    cursor: pointer
+    @include textHover
+    &:hover
+      background-size: $hover
+// End of Promo section
+
+// Newsletter Section
+#newsletter
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  align-content: center
+  background: $primaryLight
+  padding: 1rem 5rem
+  .news-text span
+    @include textHover
+    background-size: $hover
+  h4
+    @include textHover
+    &:hover
+      background-size: $hover
+  input
+    height: 3rem
+    padding: 0 1rem
+    font-size: $fontSmall
+    border: 1px solid $primaryDark
+    border-radius: 5px
+    outline: none
+// End of Newsletter Section
+
+// Footer Section
+.footer-logo
+  cursor: pointer
+
+footer
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-content: start
+
+  .col
+    display: flex
+    flex-direction: column
+    align-items: left
+    padding: 0 1rem
+    a
+      text-decoration: none
+      color: $primaryColor
+      font-weight: bold
+      @include textHover
+      &:hover
+        background-size: 35% 2px
+  .follow i
+    display: block
+    margin: 1rem 0
+    font-weight: bold
+    &:hover
+      color: $primaryLight
+  strong
+    font-weight: bold
+    @include textHover
+    background-size: $hover
+
+// End of Footer Section
+// Shop page styling 
+
+// End of Shop page styling

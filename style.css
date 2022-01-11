@@ -1,0 +1,660 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Srisakdi&family=Yuji+Boku&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Italiana', serif;
+  color: #046969;
+  scroll-behavior: smooth;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 2rem;
+  color: #222;
+}
+
+h2 {
+  font-size: 2.8rem;
+  line-height: 1.5rem;
+  color: #222;
+}
+
+h4 {
+  font-size: 1.8rem;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  color: #222;
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  color: #333;
+  margin: 1rem 0 1.2rem 0;
+}
+
+.section-p1 {
+  padding: 2.5rem 5rem;
+}
+
+.section-m1 {
+  margin: 2.5rem 0;
+}
+
+.normal, .btn-awesome {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 600;
+  padding: 1rem 1.8rem;
+  color: #000;
+  background-color: #4cb0b0;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.btn-awesome {
+  background: transparent;
+  border: 1px solid #004e4e;
+}
+
+body {
+  width: 100%;
+  color: #016565;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.logo {
+  background-image: -webkit-gradient(linear, left top, right top, from(red), to(blue));
+  background-image: linear-gradient(90deg, red, blue);
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  -webkit-transition: background-size 300ms ease;
+  transition: background-size 300ms ease;
+}
+
+.logo:hover {
+  background-size: 100% 3px;
+}
+
+#header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem 5rem;
+  background: #fff;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#header #navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#header #navbar li {
+  list-style: none;
+  padding: 0 1rem;
+  position: relative;
+}
+
+#header #navbar li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #046969;
+  background-image: -webkit-gradient(linear, left top, right top, from(red), to(blue));
+  background-image: linear-gradient(90deg, red, blue);
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  -webkit-transition: background-size 300ms ease;
+  transition: background-size 300ms ease;
+}
+
+#header #navbar li a:hover {
+  background-size: 100% 3px;
+}
+
+#header #navbar .active::after {
+  content: '';
+  width: 30%;
+  height: 2px;
+  background: #004e4e;
+  position: absolute;
+  bottom: -2px;
+  left: 2.5rem;
+}
+
+.fa-shopify {
+  font-weight: bold;
+}
+
+.fa-shopify:hover {
+  color: #4cb0b0;
+}
+
+#hero {
+  background-image: url("./img/hero4.jpg");
+  height: 90vh;
+  width: 100%;
+  background-position: top 25% right 0;
+  background-size: cover;
+  padding: 0 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#hero button {
+  background-image: url("./img/button.png");
+  background-color: transparent;
+  color: #046969;
+  font-weight: bold;
+  font-style: italic;
+  border: 0;
+  padding: 1rem 6rem 1rem 4rem;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+#hero h4 {
+  font-weight: 500;
+  padding-bottom: 1rem;
+  color: #004e4e;
+}
+
+#hero h2 {
+  font-weight: 550;
+  width: 450px;
+  line-height: 1;
+}
+
+#hero p {
+  width: 150px;
+  font-weight: 600;
+  font-weight: 600;
+}
+
+#feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#feature .feature-box {
+  width: 180px;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  -webkit-box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.03);
+          box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.03);
+  border: 0.2px solid #004e4e;
+  border-radius: 5px;
+  margin: 1rem 0;
+}
+
+#feature .feature-box:hover {
+  -webkit-box-shadow: 0.25rem 0.25rem 5rem rgba(0, 78, 78, 0.03);
+          box-shadow: 0.25rem 0.25rem 5rem rgba(0, 78, 78, 0.03);
+  cursor: pointer;
+}
+
+#feature .feature-box h6 {
+  display: inline-block;
+  padding: 0.5rem 0.5rem 0.3rem 0.5rem;
+  line-height: 1;
+  border-radius: 5px;
+  color: #004e4e;
+  font-weight: bold;
+  background-image: -webkit-gradient(linear, left top, right top, from(red), to(blue));
+  background-image: linear-gradient(90deg, red, blue);
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  -webkit-transition: background-size 300ms ease;
+  transition: background-size 300ms ease;
+}
+
+#feature .feature-box h6:hover {
+  background-size: 100% 3px;
+}
+
+#feature .feature-box img {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 0.7rem;
+}
+
+h1 {
+  border: none;
+  outline: none;
+  width: auto;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 1.8rem;
+  color: black;
+}
+
+#product1 {
+  text-align: center;
+}
+
+#product1 h1 {
+  font-size: 3.5rem;
+  line-height: 2;
+  color: #004e4e;
+}
+
+#product1 h6 {
+  line-height: 2;
+}
+
+#product1 .pro-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 1.3rem;
+}
+
+#product1 .product {
+  width: 23%;
+  min-width: 250px;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid #4cb0b0;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  -webkit-box-shadow: 1.2rem 1.2rem 2rem rgba(0, 0, 0, 0.02);
+          box-shadow: 1.2rem 1.2rem 2rem rgba(0, 0, 0, 0.02);
+  margin: 1rem 0;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+  position: relative;
+}
+
+#product1 .product:hover {
+  -webkit-box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.1);
+          box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+#product1 .product .cart {
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: transparent;
+  line-height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid #4cb0b0;
+  color: #004e4e;
+  position: absolute;
+  bottom: 25px;
+  right: 10px;
+}
+
+#product1 .product .description {
+  text-align: start;
+  padding: 0.8rem 0;
+}
+
+#product1 .product .description span {
+  color: #004e4e;
+  font-size: 1rem;
+}
+
+#product1 .product .description h5 {
+  padding-top: 7px;
+  color: #004e4e;
+  font-size: 1.8rem;
+}
+
+#product1 .product .description h4 {
+  padding-top: 7px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #004e4e;
+}
+
+#product1 .product .description i {
+  color: #c9d681;
+  font-size: 1rem;
+}
+
+#product1 .product img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+#banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-image: url("./img/banner/b2.jpg");
+  width: 100%;
+  height: 40vh;
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+#banner h4 {
+  color: #000;
+  font-size: 1.8rem;
+}
+
+#banner h2 {
+  color: #000;
+  font-size: 3.5rem;
+  padding: 1rem 0;
+}
+
+#banner h2 span {
+  text-shadow: 1px 2px 2px white;
+}
+
+#banner button:hover {
+  background-color: #046969;
+  color: #fff;
+}
+
+#sm-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.banner-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-image: url("./img/banner/img1.jpg");
+  min-width: 500px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  padding: 1.5rem;
+}
+
+.banner-box2 {
+  background-image: url("./img/banner/img2.jpg");
+}
+
+h4, h2, span, button {
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+h2 span {
+  color: #004e4e;
+  font-size: 2.8rem;
+  font-weight: bold;
+  background-image: -webkit-gradient(linear, left top, right top, from(red), to(blue));
+  background-image: linear-gradient(90deg, red, blue);
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  -webkit-transition: background-size 300ms ease;
+  transition: background-size 300ms ease;
+  background-size: 100% 3px;
+}
+
+h2 span h4 {
+  color: #046969;
+}
+
+button {
+  color: #046969;
+}
+
+button:hover {
+  background-color: #046969;
+  color: #fff;
+}
+
+#small-banner-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 5rem;
+}
+
+#small-banner-box .banner-box {
+  min-width: 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  padding: 1.5rem;
+}
+
+#small-banner-box .sm-banner1 {
+  background-image: url(./img/banner/b23.jpg);
+}
+
+#small-banner-box .sm-banner2 {
+  background-image: url("./img/banner/b17.jpg");
+}
+
+#small-banner-box .sm-banner3 {
+  background-image: url("./img/banner/b22.jpg");
+}
+
+#small-banner-box h3 {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-image: -webkit-gradient(linear, left top, right top, from(red), to(blue));
+  background-image: linear-gradient(90deg, red, blue);
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  -webkit-transition: background-size 300ms ease;
+  transition: background-size 300ms ease;
+}
+
+#small-banner-box h3:hover {
+  background-size: 100% 3px;
+}
+
+#newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background: #4cb0b0;
+  padding: 1rem 5rem;
+}
+
+#newsletter .news-text span {
+  background-image: -webkit-gradient(linear, left top, right top, from(red), to(blue));
+  background-image: linear-gradient(90deg, red, blue);
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  -webkit-transition: background-size 300ms ease;
+  transition: background-size 300ms ease;
+  background-size: 100% 3px;
+}
+
+#newsletter h4 {
+  background-image: -webkit-gradient(linear, left top, right top, from(red), to(blue));
+  background-image: linear-gradient(90deg, red, blue);
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  -webkit-transition: background-size 300ms ease;
+  transition: background-size 300ms ease;
+}
+
+#newsletter h4:hover {
+  background-size: 100% 3px;
+}
+
+#newsletter input {
+  height: 3rem;
+  padding: 0 1rem;
+  font-size: 1rem;
+  border: 1px solid #004e4e;
+  border-radius: 5px;
+  outline: none;
+}
+
+.footer-logo {
+  cursor: pointer;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: start;
+      align-content: start;
+}
+
+footer .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  padding: 0 1rem;
+}
+
+footer .col a {
+  text-decoration: none;
+  color: #046969;
+  font-weight: bold;
+  background-image: -webkit-gradient(linear, left top, right top, from(red), to(blue));
+  background-image: linear-gradient(90deg, red, blue);
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  -webkit-transition: background-size 300ms ease;
+  transition: background-size 300ms ease;
+}
+
+footer .col a:hover {
+  background-size: 35% 2px;
+}
+
+footer .follow i {
+  display: block;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+footer .follow i:hover {
+  color: #4cb0b0;
+}
+
+footer strong {
+  font-weight: bold;
+  background-image: -webkit-gradient(linear, left top, right top, from(red), to(blue));
+  background-image: linear-gradient(90deg, red, blue);
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  -webkit-transition: background-size 300ms ease;
+  transition: background-size 300ms ease;
+  background-size: 100% 3px;
+}
+/*# sourceMappingURL=style.css.map */
