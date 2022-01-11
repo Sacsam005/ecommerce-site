@@ -153,27 +153,31 @@ p
     background-image: url('./img/button.png')
     background-color: transparent
     color: $primaryColor
-    font-weight: bold
+    font-weight: 900
     font-style: italic
     border: 0
     padding: 1rem 6rem 1rem 4rem
     background-repeat: no-repeat
     cursor: pointer
+    @include textHover
+    &:hover
+      background-size: 60% 3px
+      cursor: pointer
 
   h4
-    font-weight: 500
+    font-weight: 600
     padding-bottom: 1rem
     color: $primaryDark
 
   h2
-    font-weight: 550
+    font-weight: 500
     width: 450px
     line-height: 1
 
   p
     width: 150px
-    font-weight: 600
-    font-weight: 600
+    font-weight: 900
+    font-size: $fontSmall
 // End of Hero Section
 
 // Feature Section

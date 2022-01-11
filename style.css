@@ -216,30 +216,42 @@ p {
   background-image: url("./img/button.png");
   background-color: transparent;
   color: #046969;
-  font-weight: bold;
+  font-weight: 900;
   font-style: italic;
   border: 0;
   padding: 1rem 6rem 1rem 4rem;
   background-repeat: no-repeat;
   cursor: pointer;
+  background-image: -webkit-gradient(linear, left top, right top, from(red), to(blue));
+  background-image: linear-gradient(90deg, red, blue);
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  -webkit-transition: background-size 300ms ease;
+  transition: background-size 300ms ease;
+}
+
+#hero button:hover {
+  background-size: 60% 3px;
+  cursor: pointer;
 }
 
 #hero h4 {
-  font-weight: 500;
+  font-weight: 600;
   padding-bottom: 1rem;
   color: #004e4e;
 }
 
 #hero h2 {
-  font-weight: 550;
+  font-weight: 500;
   width: 450px;
   line-height: 1;
 }
 
 #hero p {
   width: 150px;
-  font-weight: 600;
-  font-weight: 600;
+  font-weight: 900;
+  font-size: 1rem;
 }
 
 #feature {
