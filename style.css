@@ -367,6 +367,17 @@ h1 {
           box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.1);
 }
 
+#product1 .product .badge {
+  z-index: 100;
+  color: white;
+  background: #004e4e;
+  font-weight: bold;
+  position: absolute;
+  top: -8px;
+  left: 10px;
+  border-top-left-radius: 5px;
+}
+
 #product1 .product .cart {
   height: 2.5rem;
   width: 2.5rem;
