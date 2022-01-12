@@ -150,19 +150,19 @@ p
   justify-content: center
 
   button
-    background-image: url('./img/button.png')
     background-color: transparent
-    color: $primaryColor
-    font-weight: 900
     font-style: italic
     border: 0
-    padding: 1rem 6rem 1rem 4rem
-    background-repeat: no-repeat
     cursor: pointer
     @include textHover
     &:hover
       background-size: 60% 3px
       cursor: pointer
+    a
+      text-decoration: none
+      background-image: url('./img/button.png')
+      padding: 1rem 6rem 1rem 4rem
+      color: $primaryColor
 
   h4
     font-weight: 600
@@ -257,15 +257,16 @@ h1
     &:hover
       box-shadow: 1rem 1rem 2rem rgba(0,0,0,0.1)
 
-    .badge
+    span.badge
       z-index: 100
       color: white
       background: $primaryDark
       font-weight: bold
+      font-size: $fontLarge / 3
       position: absolute
       top: -8px
       left: 10px
-      border-top-left-radius: 5px
+      border-top-left-radius:
 
     .cart
       height: 2.5rem
