@@ -256,6 +256,14 @@ p {
   font-size: 1rem;
 }
 
+#video-section .video {
+  padding: 1rem 1rem;
+}
+
+#video-section .video video {
+  width: 80%;
+}
+
 #feature {
   display: -webkit-box;
   display: -ms-flexbox;
