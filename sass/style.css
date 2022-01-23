@@ -746,7 +746,7 @@ footer strong {
     transition: 0.3s;
   }
   #navbar li {
-    margin-top: 0;
+    margin: 1rem;
   }
   #navbar li a {
     font-size: 1.8rem;
