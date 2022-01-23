@@ -1,0 +1,206 @@
+#page-header {
+  background-image: url("../img/contact.jpg");
+  background-position: right;
+}
+
+#contact-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#contact-details .details {
+  width: 40%;
+}
+
+#contact-details span {
+  font-size: 1.8rem;
+}
+
+#contact-details h2 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  padding: 1.2rem 0;
+}
+
+#contact-details h3 {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+#contact-details .list-info li {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  text-align: left;
+  padding: 0.7rem 0;
+}
+
+#contact-details .list-info li i {
+  margin: 0 1rem;
+}
+
+#contact-details .map {
+  width: 55%;
+  height: 400px;
+}
+
+#contact-details iframe {
+  width: 100%;
+  height: 100%;
+}
+
+#form-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2rem;
+  padding: 5rem;
+  border: 1px solid #4cb0b0;
+}
+
+#form-details form {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#form-details form input, #form-details form textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  outline: none;
+  margin-bottom: 1.2rem;
+  border: 1px solid #004e4e;
+}
+
+#form-details span {
+  font-size: 1.8rem;
+}
+
+#form-details .people .user {
+  padding-bottom: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#form-details .people .user img {
+  width: 10%;
+  border-radius: 50%;
+}
+
+#form-details .people p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#form-details .people p span {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 680px) {
+  #page-header {
+    background-position: center;
+  }
+  #contact-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contact-details .details {
+    width: 100%;
+  }
+  #contact-details .map {
+    width: 100%;
+  }
+  #form-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0.5rem 0.5rem;
+  }
+  #form-details .people .user img {
+    width: 40%;
+  }
+  #form-details form {
+    width: 100%;
+  }
+  #form-details form h2 {
+    line-height: 1;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #page-header {
+    background-position: center;
+  }
+  form h2 {
+    line-height: 1;
+    font-size: 1.5rem;
+  }
+  #form-details {
+    padding: 1rem 0.5rem;
+  }
+  #form-details .people .user img {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #page-header {
+    background-position: center;
+  }
+  form {
+    width: 60%;
+  }
+  form h2 {
+    line-height: 1;
+    font-size: 1.5rem;
+  }
+  #form-details {
+    padding: 1rem 0.5rem;
+  }
+  #form-details .people .user img {
+    width: 20%;
+  }
+}
+/*# sourceMappingURL=contact.css.map */
