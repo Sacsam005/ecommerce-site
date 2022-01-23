@@ -77,10 +77,58 @@
         span
             line-height: 1.5
 
+// Blog Styling
+#page-header.blog-header
+    background-image: url(../img/blog/blog.jpg)
+
+#blog
+    padding: 5rem 2rem
+    .blog-box
+        display: flex
+        align-items: center
+        width: 100%
+        position: relative
+        padding-bottom: 6rem
+        .blog-image
+            width: 50%
+            img
+                width: 100%
+                object-fit: cover
+        h1
+            position: absolute
+            top: -2.5rem
+            left: 0
+            font-size: 5rem
+            font-weight: 700
+            color: $primaryLight
+            z-index: -1
+
+    .blog-details
+        width: 50%
+        padding: 0 1rem
+        a
+            text-decoration: none
+            color: $primaryColor
+            position: relative
+            @include textHover
+            &::after
+                content: ""
+                width: 3rem
+                height: 2px
+                background-color: $primaryDark
+                position: absolute
+                top: 10px
+                right: -4rem
+            &:hover
+                background-size: $hover
+            &:hover::after
+                @include textHover
+                background-size: $hover
+
 //media queries for small devices
 @media screen and ( max-width:680px  )
     .section-p1
-        padding: 0
+        padding: 1rem
     #page-header
         h2, p
             font-size: 1.2rem
@@ -96,3 +144,15 @@
             margin-right: 0
         .single-product-detail
             width: 100%
+
+    #blog
+        .blog-box
+            display: flex
+            flex-direction: column
+            .blog-image
+                width: 100%
+                padding: 0
+
+        .blog-details
+            width: 100%
+            padding: 0
