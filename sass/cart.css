@@ -133,4 +133,19 @@
     padding: 1rem;
   }
 }
+
+@media screen and (max-width: 768px) {
+  #cart {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #cart {
+    width: auto;
+  }
+  #cart.section-p1 {
+    padding: 0;
+  }
+}
 /*# sourceMappingURL=cart.css.map */
