@@ -1,0 +1,136 @@
+#cart table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  white-space: nowrap;
+}
+
+#cart table img {
+  width: 3rem;
+}
+
+#cart table td input {
+  width: 30%;
+  padding-left: 0.25rem;
+}
+
+#cart table thead {
+  border: 1px solid #4cb0b0;
+  border-left: none;
+  border-right: none;
+}
+
+#cart table thead td {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+}
+
+#cart table tbody td {
+  padding-top: 1rem;
+  font-size: 1rem;
+}
+
+#cart table td:nth-child(1) {
+  width: 100px;
+  text-align: center;
+}
+
+#cart table td:nth-child(2) {
+  width: 150px;
+  text-align: center;
+}
+
+#cart table td:nth-child(3) {
+  width: 250px;
+  text-align: center;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) {
+  width: 150px;
+  text-align: center;
+}
+
+#cart-add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#cart-add h3 {
+  font-weight: 800;
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+
+#cart-add #coupon {
+  width: 50%;
+  margin-bottom: 2rem;
+}
+
+#cart-add #coupon input {
+  width: 60%;
+  padding: 0.8rem 1rem;
+  border-radius: 5px;
+}
+
+#cart-add #subtotal {
+  width: 50%;
+  border: 0.5px solid #046969;
+  padding: 1rem;
+}
+
+#cart-add #subtotal table {
+  border-collapse: collapse;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+#cart-add #subtotal table tr {
+  padding: 1rem;
+}
+
+#cart-add #subtotal table tr td {
+  width: 50%;
+  padding: 1rem;
+  border: 0.25px solid #4cb0b0;
+  font-size: 1rem;
+}
+
+#cart-add #subtotal table tr td strong {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 680px) {
+  #cart {
+    overflow-x: auto;
+  }
+  #cart-add {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #cart-add .section-p1 {
+    padding: 1rem 0.5rem;
+  }
+  #cart-add #coupon, #cart-add #subtotal, #cart-add table {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+/*# sourceMappingURL=cart.css.map */

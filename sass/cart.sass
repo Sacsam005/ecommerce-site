@@ -1,0 +1,88 @@
+@import './variables'
+
+#cart
+    table
+        border-collapse: collapse
+        table-layout: fixed
+        white-space: nowrap
+        img
+            width: 3rem
+        td input
+            width: 30%
+            padding-left: 0.25rem
+        thead
+            border: 1px solid $primaryLight
+            border-left: none
+            border-right: none
+            td
+                font-weight: 700
+                text-transform: uppercase
+                font-size: 1rem
+                padding: 0.5rem 0
+        tbody
+            td
+                padding-top: 1rem
+                font-size: 1rem
+        td:nth-child(1)
+            width: 100px
+            text-align: center
+        td:nth-child(2)
+            width: 150px
+            text-align: center
+        td:nth-child(3)
+            width: 250px
+            text-align: center
+        td:nth-child(4),
+        td:nth-child(5),
+        td:nth-child(6)
+            width: 150px
+            text-align: center
+
+#cart-add
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    h3
+        font-weight: 800
+        font-size: 1.2rem
+        padding-bottom: 1rem
+    #coupon
+        width: 50%
+        margin-bottom: 2rem
+        input
+            width: 60%
+            padding: 0.8rem 1rem
+            border-radius: 5px
+
+    #subtotal
+        width: 50%
+        border: 0.5px solid $primaryColor
+        padding: 1rem
+        table
+            border-collapse: collapse
+            width: 100%
+            padding: 1rem
+            margin-bottom: 0.5rem
+            tr
+                padding: 1rem
+                td
+                    width: 50%
+                    padding: 1rem
+                    border: 0.25px solid $primaryLight
+                    font-size: 1rem
+                    strong
+                        font-weight: bold
+
+// media queries for smaller devices
+@media screen and (max-width: 680px)
+    #cart
+        overflow-x: auto
+    #cart-add
+        display: flex
+        flex-direction: column
+        align-items: center
+        .section-p1
+            padding: 1rem 0.5rem
+        #coupon, #subtotal, table
+            width: 100%
+            padding: 1rem
